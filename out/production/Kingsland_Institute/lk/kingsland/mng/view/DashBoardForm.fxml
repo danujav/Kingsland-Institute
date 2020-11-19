@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainRoot" prefHeight="568.0" prefWidth="974.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.kingsland.mng.controller.DashBoardFormController">
+   <children>
+      <AnchorPane layoutX="200.0" prefHeight="109.0" prefWidth="780.0" style="-fx-background-color: #130f40;">
+         <children>
+            <ImageView fitHeight="86.0" fitWidth="74.0" layoutX="688.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons8-home-26.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="678.0" layoutY="12.0" onAction="#homeActionButton" prefHeight="86.0" prefWidth="95.0" text=".">
+               <cursor> 
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor></JFXButton>
+            <Label layoutX="162.0" layoutY="11.0" text="Kingsland">
+               <font>
+                  <Font name="FreeSerif Bold Italic" size="66.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.8370786516853932" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="462.0" layoutY="78.0" text="Institute of Yours" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="root" layoutX="200.0" layoutY="109.0" prefHeight="458.0" prefWidth="773.0" style="-fx-background-color: #bdc3c7; -fx-background-color: white;">
+         <children>
+            <Label fx:id="dateLbl" layoutX="269.0" layoutY="377.0" prefHeight="42.0" prefWidth="237.0" text="2020-09-21" textAlignment="CENTER" textFill="#360000">
+               <font>
+                  <Font name="FreeSerif Bold Italic" size="38.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="61.0" prefHeight="42.0" prefWidth="95.0" text="/Home" textFill="#1e0000">
+               <font>
+                  <Font name="Serif Bold Italic" size="17.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="465.0" layoutY="111.0" prefHeight="203.0" prefWidth="268.0" style="-fx-background-color: #34495e#34495e;">
+               <children>
+                  <Label layoutX="47.0" layoutY="34.0" text="Number Of Courses" textFill="WHITE">
+                     <font>
+                        <Font name="Serif Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="65.0" layoutY="54.0" prefHeight="56.0" prefWidth="83.0" text="03" textFill="WHITE">
+                     <font>
+                        <Font name="Samyak Malayalam" size="53.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="49.0" layoutY="111.0" prefHeight="203.0" prefWidth="268.0" style="-fx-background-color: #34495e#34495e;">
+               <children>
+                  <Label layoutX="47.0" layoutY="34.0" text="Number Of Students" textFill="WHITE">
+                     <font>
+                        <Font name="Serif Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="93.0" layoutY="70.0" prefHeight="56.0" prefWidth="83.0" text="65" textFill="WHITE">
+                     <font>
+                        <Font name="Samyak Malayalam" size="53.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="570.0" prefWidth="201.0" style="-fx-background-color: #40407a;">
+         <children>
+            <Label layoutX="84.0" layoutY="14.0" text="K">
+               <font>
+                  <Font name="DejaVu Serif Condensed Bold Italic" size="41.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.7067307692307692" startX="0.21634615384615383" startY="0.009615384615384616">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Separator layoutX="42.0" layoutY="78.0" prefHeight="4.0" prefWidth="117.0" />
+            <JFXButton buttonType="RAISED" layoutX="24.0" layoutY="136.0" onAction="#homeOnAction" prefHeight="43.0" prefWidth="153.0" style="-fx-background-color: #535c68;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Serif Bold" size="26.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="24.0" layoutY="223.0" onAction="#studentOnAction" prefHeight="43.0" prefWidth="153.0" style="-fx-background-color: #535c68;" text="Student" textFill="WHITE">
+               <font>
+                  <Font name="Serif Bold" size="26.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="21.0" layoutY="306.0" onAction="#registerOnAction" prefHeight="49.0" prefWidth="160.0" style="-fx-background-color: #535c68;" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="Serif Bold" size="26.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="24.0" layoutY="392.0" onAction="#courseOnAction" prefHeight="43.0" prefWidth="153.0" style="-fx-background-color: #535c68;" text="Courses" textFill="WHITE">
+               <font>
+                  <Font name="Serif Bold" size="26.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="44.0" layoutY="56.0" text="Institute Of Yours" textFill="#bcbcbc" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
